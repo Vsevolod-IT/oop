@@ -272,9 +272,7 @@
   */
  Order.prototype.add = function(obj) {
    
-   if (this.orderList.paid) {
-     return `order  has been paid create a new order`
-   }
+
    if (obj.constructor.name === 'Object'){
      for(let i in obj){
        let tmp = callConstructs(i, obj[i]);
